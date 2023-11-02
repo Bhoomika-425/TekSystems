@@ -17,6 +17,7 @@ import (
 	"github.com/rs/zerolog/log"
 )
 
+// Instilizaing the code
 func main() {
 	err := StartApp()
 	if err != nil {
