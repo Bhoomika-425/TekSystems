@@ -7,6 +7,7 @@ import (
 	"gorm.io/gorm"
 )
 
+// db connection
 func ConnectToDatabase() (*gorm.DB, error) {
 	dsn := "host=localhost user=postgres password=admin dbname=postgres port=5432 sslmode=disable TimeZone=Asia/Shanghai"
 	db, err := gorm.Open(postgres.Open(dsn), &gorm.Config{})
